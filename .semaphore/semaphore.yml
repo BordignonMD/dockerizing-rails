@@ -8,7 +8,7 @@ blocks:
   - name: Build
     task:
       jobs:
-        - name: build drkiq
+        - name: Build drkiq
           commands:
             - 'docker pull $DOCKER_USERNAME/dockerizing-ruby-drkiq:latest || true'
             - 'docker build -t $DOCKER_USERNAME/dockerizing-ruby-drkiq:latest --cache-from=$DOCKER_USERNAME/dockerizing-ruby-drkiq:latest -f Dockerfile.production .'
