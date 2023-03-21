@@ -19,7 +19,3 @@ blocks:
         commands:
           - checkout
           - 'echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin'
-      agent:
-        machine:
-          type: e1-standard-2
-          os_image: ubuntu1804
